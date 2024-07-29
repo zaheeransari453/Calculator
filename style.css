@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body {
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.calculator{
+    width: 340px;
+    height: 550px;
+    border: 0.1rem solid #a2b5b8;
+    border-radius: 0.9rem;
+    background: transparent;
+    padding: 1.5rem;
+    box-shadow: 0px 3px 20px rgba(113, 115, 119, 0.5);
+    transition: ease-in-out .3s;
+    
+}
+.calculator:hover{
+    box-shadow: 0px 3px 40px rgba(113, 115, 119, 0.5);
+    width: 342px;
+    height: 552px;
+
+}
+input{
+    padding: 2rem 0.5rem 0.5rem;
+    height: 4.8rem;
+    width: 100%;
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
+    border-radius: 0.6rem;
+    margin-bottom: 1.7rem;
+    color: white;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    text-align: right;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+input::placeholder{
+    color: white;
+}
+input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 30px rgba(113, 115, 119, 0.5);
+}
+.button-row{
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    margin: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(113, 115, 119, 0.5);
+    transition: ease-in .3s;
+}
+.button:hover{
+    box-shadow: 0px 3px 25px rgba(113, 115, 119, 0.5);
+    width: 4.2rem;
+    height: 4.2rem;
+    margin: 0.4rem; 
+    
+    
+}
+#equal{
+    background: orange;
+
+}
+#operator{
+    color: greenyellow;
+}
+#action{
+    color: yellow;
+}
